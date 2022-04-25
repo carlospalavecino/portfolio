@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+		<link href="css/lightbox.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="p-4 pt-5">
+      <nav id="sidebar" class="sidebar">
+				<div class="p-4 pt-5 nav-container">
 		  		<div class="offset-1 col-10 rounded-circle mb-5 photo-container">
             <img class="col-12 rounded-circle photo" src="images/perfil.jpg" alt="Carlos Palavecino"/>
           </div>
@@ -139,19 +140,268 @@
     	</nav>
 
       <!-- Content  -->
-      <div id="content" class="p-4 p-md-5">
+      <section id="content" class="grid-container">
+        
+        <!-- 2022 -->
+        <a class="grid-item" href="images/portfolio/all-incyclingtours-desktop.jpg" data-lightbox="gallery"
+          data-title="all-incyclingtours.com | Setup e implementación de diseño (wordpress) | 2022">
+          <div>
+            <p>all-incyclingtours.com
+            <span class="description"><i>2022</i> | Setup e implementación de diseño (wordpress)</span></p>
+          </div>
+          <img src="images/portfolio/all-incyclingtours-desktop-thumbnail.jpg" alt="all-incyclingtours.com | Setup e implementación de diseño (wordpress) | 2022"/>
+        </a>
 
-        <button type="button" id="sidebarCollapse" class="btn btn-collapse">
-          <i class="fa fa-bars"></i>
-          <span class="sr-only">Toggle Menu</span>
-        </button>
+        <a class="grid-item" href="images/portfolio/all-incyclingtours-mobile.jpg" data-lightbox="gallery"
+          data-title="all-incyclingtours.com | Setup e implementación de diseño (wordpress) | 2022">
+          <div>
+            <p>all-incyclingtours.com
+            <span class="description"><i>2022</i> | Setup e implementación de diseño (wordpress)</span></p>
+          </div>
+          <img src="images/portfolio/all-incyclingtours-mobile-thumbnail.jpg" alt="all-incyclingtours.com | Setup e implementación de diseño (wordpress) | 2022"/>
+        </a>
+        
+        <!-- 2021 -->
+        <a class="grid-item" href="images/portfolio/institutovirtualdeingles-desktop.jpg" data-lightbox="gallery"
+          data-title="institutovirtualdeingles.com.ar | Web en wordpress | 2021">
+          <div>
+            <p>institutovirtualdeingles.com.ar
+            <span class="description"><i>2021</i> | Web en wordpress</span></p>
+          </div>
+          <img src="images/portfolio/institutovirtualdeingles-desktop-thumbnail.jpg" alt="institutovirtualdeingles.com.ar | Web en wordpress | 2021"/>
+        </a>
 
+        <a class="grid-item" href="images/portfolio/institutovirtualdeingles-mobile.jpg" data-lightbox="gallery"
+          data-title="institutovirtualdeingles.com.ar | Web en wordpress | 2021">
+          <div>
+            <p>institutovirtualdeingles.com.ar
+            <span class="description"><i>2021</i> | Web en wordpress</span></p>
+          </div>
+          <img src="images/portfolio/institutovirtualdeingles-mobile-thumbnail.jpg" alt="institutovirtualdeingles.com.ar | Web en wordpress | 2021"/>
+        </a>
+        
+        <!-- 2019 -->
+        <a class="grid-item" href="images/portfolio/damian-milani-desktop.jpg" data-lightbox="gallery"
+          data-title="milaniarquitecto.com.ar | Web estática  | 2019">
+          <div>
+            <p>milaniarquitecto.com.ar
+            <span class="description"><i>2019</i> | Web estática </span></p>
+          </div>
+          <img src="images/portfolio/damian-milani-desktop-thumbnail.jpg" alt="milaniarquitecto.com.ar | Web estática  | 2019"/>
+        </a>
 
-      </div>
-		</div>
+        <a class="grid-item" href="images/portfolio/damian-milani-mobile.jpg" data-lightbox="gallery"
+          data-title="milaniarquitecto.com.ar | Web estática - mobile | 2019">
+          <div>
+            <p>milaniarquitecto.com.ar
+            <span class="description"><i>2019</i> | Web estática - mobile</span></p>
+          </div>
+          <img src="images/portfolio/damian-milani-mobile-thumbnail.jpg" alt="milaniarquitecto.com.ar | Web estática - mobile | 2019"/>
+        </a>
+        
+        <!-- 2018 -->
+        <a class="grid-item" href="images/portfolio/inflex-desktop.jpg" data-lightbox="gallery"
+          data-title="inflex.com.ar | Onepage estática | 2018">
+          <div>
+            <p>inflex.com.ar
+            <span class="description"><i>2018</i> | Onepage estática</span></p>
+          </div>
+          <img src="images/portfolio/inflex-desktop-thumbnail.jpg" alt="inflex.com.ar | Onepage estática | 2018"/>
+        </a>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
+        <a class="grid-item" href="images/portfolio/inflex-mobile.jpg" data-lightbox="gallery"
+          data-title="inflex.com.ar | Onepage estática - mobile | 2018">
+          <div>
+            <p>inflex.com.ar
+            <span class="description"><i>2018</i> | Onepage estática - mobile</span></p>
+          </div>
+          <img src="images/portfolio/inflex-mobile-thumbnail.jpg" alt="inflex.com.ar | Onepage esátestática - mobile | 2018"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/red-logistica-desktop.jpg" data-lightbox="gallery"
+          data-title="redlogistica.com.ar | Web estática | 2018">
+          <div>
+            <p>redlogistica.com.ar
+            <span class="description"><i>2018</i> | Web estática</span></p>
+          </div>
+          <img src="images/portfolio/red-logistica-desktop-thumbnail.jpg" alt="redlogistica.com.ar | Web estática | 2018"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/red-logistica-mobile.jpg" data-lightbox="gallery"
+          data-title="redlogistica.com.ar | Web estática - mobile | 2018">
+          <div>
+            <p>redlogistica.com.ar
+            <span class="description"><i>2018</i> | Web estática - mobile</span></p>
+          </div>
+          <img src="images/portfolio/red-logistica-mobile-thumbnail.jpg" alt="redlogistica.com.ar | Web estática - mobile | 2018"/>
+        </a>
+
+        <!-- 2015 -->
+        <a class="grid-item" href="images/portfolio/crosscam-360-desktop.jpg" data-lightbox="gallery"
+          data-title="crosscam360.eurocase.com | Diseño web | 2015">
+          <div>
+            <p>crosscam360.eurocase.com
+            <span class="description"><i>2015</i> | Diseño web</span></p>
+          </div>
+          <img src="images/portfolio/crosscam-360-desktop-thumbnail.jpg" alt="crosscam360.eurocase.com | Diseño web | 2015"/>
+        </a>
+        
+        <a class="grid-item" href="images/portfolio/intersur-recoleta-desktop.jpg" data-lightbox="gallery"
+          data-title="intersurrecoleta.com.ar | Web en wordpress | 2015">
+          <div>
+            <p>intersurrecoleta.com.ar
+            <span class="description"><i>2015</i> | Web en wordpress</span></p>
+          </div>
+          <img src="images/portfolio/intersur-recoleta-desktop-thumbnail.jpg" alt="intersurrecoleta.com.ar | Web en wordpress | 2015"/>
+        </a>
+        
+        <a class="grid-item" href="images/portfolio/intersur-recoleta-mobile.jpg" data-lightbox="gallery"
+          data-title="intersurrecoleta.com.ar | Web en wordpress - mobile | 2015">
+          <div>
+            <p>intersurrecoleta.com.ar
+            <span class="description"><i>2015</i> | Web en wordpress - mobile</span></p>
+          </div>
+          <img src="images/portfolio/intersur-recoleta-mobile-thumbnail.jpg" alt="intersurrecoleta.com.ar | Web en wordpress - mobile | 2015"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/volvio-la-flor-desktop.jpg" data-lightbox="gallery"
+          data-title="volviolaflor.com.ar | Landing en wordpress - mobile | 2015">
+          <div>
+            <p>volviolaflor.com.ar
+            <span class="description"><i>2015</i> | Landing en wordpress - mobile</span></p>
+          </div>
+          <img src="images/portfolio/volvio-la-flor-desktop-thumbnail.jpg" alt="volviolaflor.com.ar | Landing en wordpress - mobile | 2015"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/volvio-la-flor-mobile.jpg" data-lightbox="gallery"
+          data-title="volviolaflor.com.ar | Landing en wordpress - mobile | 2015">
+          <div>
+            <p>volviolaflor.com.ar
+            <span class="description"><i>2015</i> | Landing en wordpress - mobile</span></p>
+          </div>
+          <img src="images/portfolio/volvio-la-flor-mobile-thumbnail.jpg" alt="volviolaflor.com.ar wordpress | 2015"/>
+        </a>
+
+        <!-- 2014 -->
+        <a class="grid-item" href="images/portfolio/futones-desktop.jpg" data-lightbox="gallery"
+          data-title="leonstore.com.ar | Probador y generador de presupuesto virtual de futones - Desarrollo propio (ActionScript) | 2014">
+          <div>
+            <p>leonstore.com.ar
+            <span class="description"><i>2014</i> | Probador y generador de presupuesto virtual de futones - Desarrollo propio (ActionScript)</span></p>
+          </div>
+          <img src="images/portfolio/futones-desktop-thumbnail.jpg" alt="leonstore.com.ar | Probador y generador de presupuesto virtual de futones - Desarrollo propio (ActionScript) | 2014"/>
+        </a>
+
+        <!-- 2013 -->
+        <a class="grid-item" href="images/portfolio/valentine-desktop.jpg" data-lightbox="gallery"
+          data-title="valentine.com.ar | Catálogo con abm - desarrollo propio | 2013">
+          <div>
+            <p>valentine.com.ar
+            <span class="description"><i>2013</i> | Catálogo con abm - desarrollo propio</span></p>
+          </div>
+          <img src="images/portfolio/valentine-desktop-thumbnail.jpg" alt="valentine.com.ar | Catálogo con abm - desarrollo propio | 2013"/>
+        </a>
+
+        <!-- 2012 -->
+        <a class="grid-item" href="images/portfolio/hp-desktop.jpg" data-lightbox="gallery"
+          data-title="HP by cignal | Landing de producto | 2012">
+          <div>
+            <p>HP by cignal
+            <span class="description"><i>2012</i> | Landing de producto</span></p>
+          </div>
+          <img src="images/portfolio/hp-desktop-thumbnail.jpg" alt="HP by cignal | Landing de producto | 2012"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/linksys-desktop.jpg" data-lightbox="gallery"
+          data-title="tiendalinksys.com.ar | Landing de producto | 2012">
+          <div>
+            <p>tiendalinksys.com.ar
+            <span class="description"><i>2012</i> | Landing de producto</span></p>
+          </div>
+          <img src="images/portfolio/linksys-desktop-thumbnail.jpg" alt="tiendalinksys.com.ar | Landing de producto | 2012"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/mouzito-desktop.jpg" data-lightbox="gallery"
+          data-title="mouzitopastaypizza.com.ar | Web estática | 2012">
+          <div>
+            <p>mouzitopastaypizza.com.ar
+            <span class="description"><i>2012</i> | Web estática</span></p>
+          </div>
+          <img src="images/portfolio/mouzito-desktop-thumbnail.jpg" alt="mouzitopastaypizza.com.ar | Web estática | 2012"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/prestamos-al-instante-desktop.jpg" data-lightbox="gallery"
+          data-title="prestamosalinstante.com.ar | Web estática | 2012">
+          <div>
+            <p>prestamosalinstante.com.ar
+            <span class="description"><i>2012</i> | Web estática</span></p>
+          </div>
+          <img src="images/portfolio/prestamos-al-instante-desktop-thumbnail.jpg" alt="prestamosalinstante.com.ar | Web estática | 2012"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/sivegroup-desktop.jpg" data-lightbox="gallery"
+          data-title="sivegroup.com.ar | Catálogo con abm - desarrollo propio | 2012">
+          <div>
+            <p>sivegroup.com.ar
+            <span class="description"><i>2012</i> | Catálogo con abm - desarrollo propio</span></p>
+          </div>
+          <img src="images/portfolio/sivegroup-desktop.jpg" alt="sivegroup.com.ar | Catálogo con abm - desarrollo propio | 2012"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/sol-antiques-desktop.jpg" data-lightbox="gallery"
+          data-title="solantiques.com.ar | Landing estática | 2012">
+          <div>
+            <p>solantiques.com.ar
+            <span class="description"><i>2012</i> | Landing estática</s2012></p>
+          </div>
+          <img src="images/portfolio/sol-antiques-desktop.jpg" alt="solantiques.com.ar | Landing estática | 2012"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/stop-juegos-desktop.jpg" data-lightbox="gallery"
+          data-title="stopjuegos.com.ar | Web estática | 2012">
+          <div>
+            <p>stopjuegos.com.ar
+            <span class="description"><i>2012</i> | Web estática</span></p>
+          </div>
+          <img src="images/portfolio/stop-juegos-desktop-thumbnail.jpg" alt="stopjuegos.com.ar | Web estática | 2012"/>
+        </a>
+
+        <!-- 2010 -->
+        <a class="grid-item" href="images/portfolio/boutique-de-vientos-desktop.jpg" data-lightbox="gallery"
+          data-title="boutiquedevientos.com.ar | Landing de producto | 2010">
+          <div>
+            <p>boutiquedevientos.com.ar
+            <span class="description"><i>2010</i> | Landing de producto</span></p>
+          </div>
+          <img src="images/portfolio/boutique-de-vientos-desktop-thumbnail.jpg" alt="boutiquedevientos.com.ar | Landing de producto | 2010"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/cisco-desktop.jpg" data-lightbox="gallery"
+          data-title="tiendacisco.com.ar | Diseño de Theme para Vstore | 2010">
+          <div>
+            <p>tiendacisco.com.ar
+            <span class="description"><i>2010</i> | Diseño de Theme para Vstore</span></p>
+          </div>
+          <img src="images/portfolio/cisco-desktop-thumbnail.jpg" alt="tiendacisco.com.ar | Diseño de Theme para Vstore | 2010"/>
+        </a>
+
+        <a class="grid-item" href="images/portfolio/gigaset-desktop.jpg" data-lightbox="gallery"
+          data-title="tiendagigaset.com.ar | Theme para Vstore | 2010">
+          <div>
+            <p>tiendagigaset.com.ar
+            <span class="description"><i>2010</i> | Theme para Vstore</span></p>
+          </div>
+          <img src="images/portfolio/gigaset-desktop.jpg" alt="tiendagigaset.com.ar | Theme para Vstore | 2010"/>
+        </a>
+
+      </section>
+		
+    <button type="button" id="sidebarCollapse" class="btn btn-collapse">
+      <i class="fa fa-bars"></i>
+      <span class="sr-only">Toggle Menu</span>
+    </button>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>

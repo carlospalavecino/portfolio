@@ -8193,8 +8193,10 @@ h1, h2, h3, h4, h5,
   width: 100%; }
 
 #sidebar {
+  position: fixed;
   min-width: 300px;
   max-width: 300px;
+  height: 100vh;
   background: #1d1919;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -8231,7 +8233,15 @@ h1, h2, h3, h4, h5,
     #sidebar {
       margin-left: -300px; }
       #sidebar.active {
-        margin-left: 0; } }
+        margin-left: 0; } 
+    #content {
+      margin-left:0 !important;
+    }
+    #content.active {
+      margin-left: 300px !important;
+    }
+       
+  }
 
 a[data-toggle="collapse"] {
   position: relative; }
@@ -8255,7 +8265,12 @@ a[data-toggle="collapse"] {
   min-height: 100vh;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s; 
+  margin-left: 300px;
+}
+#content.active {
+  margin-left: 0;
+}
 
 .btn.btn-primary {
   background: var(--highlightColor);
@@ -8318,9 +8333,103 @@ a[data-toggle="collapse"] {
 }
 
 .btn-collapse {
-  color: var(--grey);
-  position: absolute;
+  color: var(--primaryColor);
+  position: fixed;
   top: 1em;
   right: 1em;
   font-size: 1.5em;
+  background: #272727;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+.btn-collapse:hover{
+  background: var(--highlightColor);
+  color: white;
+  border-color: #272727;
+}
+
+.lb-outerContainer {
+  width: 90% !important;
+  max-width: 700px;
+  height: 90vh !important;
+  overflow: scroll;
+}
+.lightbox .lb-image {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+.grid-container {
+  columns: 5 300px;
+  column-gap: 1px;
+  width: 100%;
+  margin: 0px;
+  padding: 0.5px !important;
+}
+.grid-container div {
+  display: inline-block;
+  width: 100%;
+  transition: all .25s ease-in-out;
+}
+.grid-container img {
+  width: 100%;
+  margin: 0.5px;
+  transition: all .25s ease-in-out;
+}
+a.grid-item {
+  display: block;
+  position: relative;
+}
+.grid-item div {
+  position: absolute;
+  display: block;
+  height: 100% !important;
+}
+.grid-item p {
+  color: white;
+  display: block;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: -1em;
+  padding: 0 1em ;
+  line-height: 100%;
+  opacity: 0;
+}
+.grid-item p span.description {
+  font-size: 70%;
+  display: block;
+  font-weight: lighter;
+}
+.grid-item:hover div {
+  background: rgba(0, 0, 0, 0.8);
+  transition: all .25s ease-in-out;
+}
+.grid-item:hover p {
+  bottom: 0;
+  opacity: 100%;
+  transition: all .25s ease-in-out;
+}
+
+.nav-container {
+  max-height: 100vh;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+}
+
+.components {
+
+  height: calc(100vh - 400px);
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+.components::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
