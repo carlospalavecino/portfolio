@@ -8351,9 +8351,17 @@ a[data-toggle="collapse"] {
 .lb-outerContainer {
   width: 90% !important;
   max-width: 700px;
-  height: 90vh !important;
+  height: auto;
+  max-height: 85vh !important;
   overflow: scroll;
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
 }
+
+.lb-outerContainer::-webkit-scrollbar {
+display: none; /* for Chrome, Safari, and Opera */
+}
+
 .lightbox .lb-image {
   width: 100% !important;
   height: auto !important;
